@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/api/productos" method="post">
+         <fieldset id="commentFS">
+           <legend>Envía un nuevo producto</legend>
+           <label>
+           Ingresa título producto
+           <input type="text" name="title"/>
+           </label>
+           <label>
+           Ingresa precio producto
+           <input type="text" name="price"/>
+           </label>
+           <label>
+           Ingresa URL producto
+           <input type="text" name="thumbnail"/>
+           </label>
+        </fieldset>                      
+        <button type="submit">Enviar</button>
+    </form>
+
+    <form action="/api/productos" method="put">
+         <fieldset id="commentFS">
+           <legend>Actualiza un producto</legend>
+           <label>
+           Ingresa ID producto a actualizar
+           <input type="text" name="id"/> 
+           </label>
+          <label>
+           Ingresa título nuevo producto
+           <input type="text" name="title"/>
+           </label>
+           <label>
+           Ingresa precio nuevo producto
+           <input type="text" name="price"/>
+           </label>
+           <label>
+           Ingresa URL nuevo producto
+           <input type="text" name="thumbnail"/>
+           </label>
+        </fieldset>                      
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
+
